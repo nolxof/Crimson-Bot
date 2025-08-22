@@ -1,3 +1,7 @@
+// ©️ Moaaz 2024
+// البوت: Crimson Bot
+// المطور: https://wa.me/201156323742
+
 import {watchFile, unwatchFile} from 'fs';
 import chalk from 'chalk';
 import {fileURLToPath} from 'url';
@@ -7,23 +11,22 @@ import fetch from 'node-fetch';
 import axios from 'axios';
 import moment from 'moment-timezone';
 
-global.botnumber = "*『🔥┇𝙼𝙴𝙶𝙾-𝙱𝙾𝚃』*"
+global.botnumber = "*『🔥┇CRIMSON-BOT』*"
 global.confirmCode = ""
 
-global.owner = [['201012531172', '𝙢,𝙚,𝙜,𝙤, ❦︎', true],
-];
+global.owner = [['201156323742', '👑 المطور 👑', true]];
 
-global.suittag = ['201025663589'];
-global.prems = ['201025663589'];
+global.suittag = ['201156323742'];
+global.prems = ['201156323742'];
 
-global.packname = '☾︎ 𝙈𝙀𝙂𝙊𝘽𝙊𝙏-𝙈𝘿 ☽︎';
-global.author = '✩𝙼𝙴𝙶𝙾-𝙱𝙾𝚃☆';
-global.wm = '✯𝐌𝐄𝐆𝐎𝐁𝐎𝐓-𝐌𝐃✯';
-global.vs = 'V2 • 1.0.5';
-global.titulowm = '☾︎ 𝙈𝙀𝙂𝙊𝘽𝙊𝙏-𝙈𝘿 ☽︎';
-global.titulowm2 = `☾︎ 𝙈𝙀𝙂𝙊𝘽𝙊𝙏-𝙈𝘿 ☽︎`
-global.igfg = '☾︎ 𝙈𝙀𝙂𝙊𝘽𝙊𝙏-𝙈𝘿 ☽︎';
-global.wait = '*[ ⏳ ] انتظر جاي التحميل تابع صاحب البوت*...\n\n*atom.bio/mego51_51*';
+global.packname = '☾︎ CRIMSON-BOT-MD ☽︎';
+global.author = 'Moaaz';
+global.wm = '✯CRIMSON-BOT-MD✯';
+global.vs = 'V2 • 1.0.0';
+global.titulowm = '☾︎ CRIMSON-BOT-MD ☽︎';
+global.titulowm2 = `☾︎ CRIMSON-BOT-MD ☽︎`
+global.igfg = '☾︎ CRIMSON-BOT-MD ☽︎';
+global.wait = '*[ ⏳ ] جاري التحميل...*\n\n*مطور البوت: https://wa.me/201156323742*';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
@@ -34,7 +37,7 @@ global.imagen6 = fs.readFileSync('./Menu3.png');
 
 global.mods = [];
 
-//* *******Tiempo***************
+//* *******الوقت***************
 global.d = new Date(new Date + 3600000);
 global.locale = 'ar';
 global.dia = d.toLocaleDateString(locale, {weekday: 'long'});
@@ -43,15 +46,15 @@ global.mes = d.toLocaleDateString('ar', {month: 'long'});
 global.año = d.toLocaleDateString('ar', {year: 'numeric'});
 global.tiempo = d.toLocaleString('ar-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\n☾︎ 𝙈𝙀𝙂𝙊𝘽𝙊𝙏-𝙈𝘿 ☽︎`;
-global.gt = '☾︎ 𝙈𝙀𝙂𝙊𝘽𝙊𝙏-𝙈𝘿 ☽︎';
-global.mysticbot = '☾︎ 𝙈𝙀𝙂𝙊𝘽𝙊𝙏-𝙈𝘿 ☽︎';
-global.md = 'atom.bio/mego51_51';
-global.mysticbot = 'atom.bio/mego51_51';
-global.waitt = '*[ ⏳ ] انتظر جاي التحميل تابع صاحب البوت*...\n\n*atom.bio/mego51_51*';
-global.waittt = '*[ ⏳ ] انتظر جاي التحميل تابع صاحب البوت*...\n\n*atom.bio/mego51_51*';
-global.waitttt = '*[ ⏳ ] انتظر جاي التحميل تابع صاحب البوت*...\n\n*atom.bio/mego51_51*';
-global.nomorown = '201025663589';
+global.wm2 = `${dia} ${fecha}\n☾︎ CRIMSON-BOT-MD ☽︎`;
+global.gt = '☾︎ CRIMSON-BOT-MD ☽︎';
+global.mysticbot = '☾︎ CRIMSON-BOT-MD ☽︎';
+global.md = 'https://wa.me/201156323742';
+global.mysticbot = 'https://wa.me/201156323742';
+global.waitt = '*[ ⏳ ] جاري التحميل...*\n\n*مطور البوت: https://wa.me/201156323742*';
+global.waittt = '*[ ⏳ ] جاري التحميل...*\n\n*مطور البوت: https://wa.me/201156323742*';
+global.waitttt = '*[ ⏳ ] جاري التحميل...*\n\n*مطور البوت: https://wa.me/201156323742*';
+global.nomorown = '201156323742';
 global.pdoc = ['application/vnd.openxmlformats-officedocument.presentationml.presentation', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/vnd.ms-excel', 'application/msword', 'application/pdf', 'text/rtf'];
 global.cmenut = '❖––––––『';
 global.cmenub = '┊✦ ';
@@ -66,8 +69,8 @@ global.htki = '*⭑•̩̩͙⊱•••• ☪*';
 global.htka = '*☪ ••••̩̩͙⊰•⭑*';
 global.comienzo = '• • ◕◕════';
 global.fin = '════◕◕ • •';
-global.botdate = `*[ 📅 ] التاريخ:*  ${moment.tz('Egypt/cairo_city').format('DD/MM/YY')}`;
-global.bottime = `*[ ⏳ ] الوقت:* ${moment.tz('Egypt/cairo_city').format('HH:mm:ss')}`;
+global.botdate = `*[ 📅 ] التاريخ:*  ${moment.tz('Africa/Cairo').format('DD/MM/YY')}`;
+global.bottime = `*[ ⏳ ] الوقت:* ${moment.tz('Africa/Cairo').format('HH:mm:ss')}`;
 global.fgif = {key: {participant: '0@s.whatsapp.net'}, message: {'videoMessage': {'title': wm, 'h': `Hmm`, 'seconds': '999999999', 'gifPlayback': 'true', 'caption': bottime, 'jpegThumbnail': fs.readFileSync('./Menu.png')}}};
 global.multiplier = 99;
 global.flaaa = [
@@ -82,6 +85,6 @@ global.flaaa = [
 const file = fileURLToPath(import.meta.url);
 watchFile(file, () => {
   unwatchFile(file);
-  console.log(chalk.redBright('Update \'config.js\''));
+  console.log(chalk.redBright('تم تحديث ملف \'config.js\''));
   import(`${file}?update=${Date.now()}`);
 });
